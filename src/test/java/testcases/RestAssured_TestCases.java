@@ -83,6 +83,7 @@ public class RestAssured_TestCases {
 		if (cookieValue == null) {
 			throw new RuntimeException("orangehrm cookie not found after login");
 		}
+		RestAssured.useRelaxedHTTPSValidation();
 	}
 
 	@Test(priority = 1, groups = {
